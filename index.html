@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>productdetails</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        height: 2000px;
+      }
+      .container {
+        display: flex;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        background-color: black;
+        gap: 15px;
+        color: white;
+      }
+      .content {
+        display: flex;
+      }
+      .product {
+        margin: 15px;
+      }
+      .pkr {
+        background-color: orange;
+        color: white;
+        height: 30px;
+        width: 500px;
+        border-radius: 3px;
+        margin: 15px;
+      }
+      .head {
+        margin: 13px;
+        color: black;
+        display: flex;
+      }
+      .para{
+        margin: 13px;
+        font-size: 17px;
+        color: grey;
+      }
+      .off{
+        margin: 13px;
+        color: red;
+      }
+      .New{
+        margin-top: -25px;
+        margin-left: 13px;
+        font-size: 15px;
+        color: red;
+      }
+      .old{
+        color: grey;
+        font-size: 15px;
+        margin-left:13px ;
+      }
+      .coupon{
+        background-color: rgb(184, 164, 178);
+        color: white;
+        height: 30px;
+        width: 500px;
+        border-radius: 3px;
+        margin: 15px;
+      }
+      .watch{
+        color: black;
+        padding-top: 15px;
+      }
+      .stars{
+       display: flex;
+       color: grey;
+       text-align: center;
+       margin: 3px;
+      }
+      .review{
+        color: grey;
+        margin: 10px;
+      }
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 23%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.item .title {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.item .price {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.item .discounted-price {
+    text-decoration: line-through;
+    color: grey;
+    margin: 10px 0;
+}
+
+.item .shipping {
+    color: green;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.section2{
+  color: black;
+  display: flex;
+  gap: 20px;
+}
+h3{
+  color: black;
+  padding-top: 50px;
+}
+.heading{
+  color:black ;
+  padding-top: 50px;
+}
+.section3{
+  display: flex;
+  padding-top: 50px;
+  gap: 20px;
+  color: black;
+  background-color: rgb(240, 240, 240);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.1) ;
+}
+.section4{
+  display: flex;
+  padding-top: 50px;
+  gap: 20px;
+  color: black;
+  background-color: rgb(240, 240, 240);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.1) ;
+}
+
+.reviews-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.overall-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rating-score {
+    font-size: 48px;
+    color: #ff9800;
+    margin-right: 10px;
+}
+
+.stars {
+    font-size: 24px;
+    color: #ff9800;
+}
+
+.verified-purchases {
+    font-size: 14px;
+    color: #888;
+    margin-left: 10px;
+}
+
+.rating-breakdown {
+    margin-bottom: 20px;
+}
+
+.rating-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.rating-item span {
+    width: 70px;
+}
+
+.bar {
+    flex-grow: 1;
+    height: 10px;
+    background: #eee;
+    margin: 0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: #ff9800;
+}
+
+.review-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter {
+    background: #f0f0f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter:hover {
+    background: #ddd;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-images {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.review-images img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.helpful {
+    font-size: 14px;
+    color: #888;
+}
+
+.view-more {
+    background: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.view-more:hover {
+    background: #e68a00;
+}
+
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <div><h1>Ali express | Euro 2024</h1></div>
+      <div>
+        <input
+          type="text"
+          placeholder="Search for products"
+          style="width: 400px; height: 20px; border-radius: 10px"
+        />
+        <img src="qr code.png" alt="" style="gap: 20px" />
+      </div>
+      <p>Download the <br />Ali express app</p>
+      <img src="pak.png" alt="" style="height: 38px; margin-left: 5px" />
+      <p>EN/ <br />PKR</p>
+      <img src="gender.png" alt="" style="width: 40px" />
+      <p>Welcome/ <br />Sign in/Register</p>
+      <img src="cart.png" alt="" />
+      <p>Cart</p>
+    </header>
+    <div class="content">
+      <div class="product">
+        <img src="product1.jfif" alt="" />
+      </div>
+      <div class="pkr">
+        <p>Save PKR 3894</p>
+        <div class="head"><h1>PKR275</h1> 
+            <div class="para"><p><s>PKR4169</s></p></div>
+            <div class="off"><p>93% off</p></div>
+        </div>
+        <div class="New"><p>New Launched in the last 30 days</p></div>
+        <div class="old"><p>Prize shown before tax | Extra 2 % off with coins</p></div>
+        <div class="coupon">
+            <p>Coupon and Discount</p>
+            <div class="watch"><p>POEDAGAR Men Watch Luxury Business Quartz Watches Stainless Stain Strap Sport Chronograph Men's Wristwatch Waterproof Luminous</p></div>
+            <div class="stars">
+                <div><img src="star.png" alt=""></div>
+                <div><img src="star.png" alt=""></div>
+                <div><img src="star.png" alt=""></div>
+                <div><img src="star.png" alt=""></div>
+                <div><img src="star.png" alt=""></div>
+                <div class="review">
+                  <p2>5.0 7 review | 800+ sold</p2>
+    </div>
+    </div>
+    <hr>
+    <div class="section">
+      <h2>Related items</h2>
+        <div class="item-list">
+            <div class="item">
+                <img src="watch8.jfif" alt="watch3">
+                <p class="title">MIJIA KY102 Drone 8K...</p>
+                <p class="price">PKR681</p>
+                <p class="discounted-price">PKR2,780</p>
+                <p class="shipping">Free shipping over PKR2,780</p>
+            </div>
+            <div class="item">
+              <img src="watch2.png" alt="watch2">
+              <p class="title">MIJIA KY102 Drone 8K...</p>
+              <p class="price">PKR681</p>
+              <p class="discounted-price">PKR2,780</p>
+              <p class="shipping">Free shipping over PKR2,780</p>
+          </div>
+          <div class="item">
+            <img src="watch4.jpg" alt="watch4">
+            <p class="title">MIJIA KY102 Drone 8K...</p>
+            <p class="price">PKR681</p>
+            <p class="discounted-price">PKR2,780</p>
+            <p class="shipping">Free shipping over PKR2,780</p>
+        </div>
+        <div class="item">
+          <img src="watch5.png" alt="watch5">
+          <p class="title">MIJIA KY102 Drone 8K...</p>
+          <p class="price">PKR681</p>
+          <p class="discounted-price">PKR2,780</p>
+          <p class="shipping">Free shipping over PKR2,780</p>
+      </div>
+      <div class="item">
+        <img src="watch6.jfif" alt="watch6">
+        <p class="title">MIJIA KY102 Drone 8K...</p>
+        <p class="price">PKR681</p>
+        <p class="discounted-price">PKR2,780</p>
+        <p class="shipping">Free shipping over PKR2,780</p>
+    </div>
+    <div class="item">
+      <img src="watch7.jfif" alt="watch3">
+      <p class="title">MIJIA KY102 Drone 8K...</p>
+      <p class="price">PKR681</p>
+      <p class="discounted-price">PKR2,780</p>
+      <p class="shipping">Free shipping over PKR2,780</p>
+  </div>
+    </div>
+    <div>
+      <br>
+      <div class="section2">
+      <p>Customer Reviews (7)</p>
+      <p>Specification</p>
+      <p>description</p>
+      <p>Store</p>
+      <p>You may also like</p>
+      <br>
+    </div>
+</div>
+<div class="reviews-container">
+  <h2>Customer Reviews (7)</h2>
+  <div class="overall-rating">
+      <div class="rating-score">5</div>
+      <div class="stars"><img src="star2.png" alt=""></div>
+      <div class="stars"><img src="star2.png" alt=""></div>
+      <div class="stars"><img src="star2.png" alt=""></div>
+      <div class="stars"><img src="star2.png" alt=""></div>
+      <div class="stars"><img src="star2.png" alt=""></div>
+      <div class="verified-purchases">All from verified purchases</div>
+  </div>
+  <div class="rating-breakdown">
+      <div class="rating-item"><span>5 stars</span><div class="bar"><div class="fill" style="width: 100%;"></div></div><span>7</span></div>
+      <div class="rating-item"><span>4 stars</span><div class="bar"><div class="fill" style="width: 0%;"></div></div><span>0</span></div>
+      <div class="rating-item"><span>3 stars</span><div class="bar"><div class="fill" style="width: 0%;"></div></div><span>0</span></div>
+      <div class="rating-item"><span>2 stars</span><div class="bar"><div class="fill" style="width: 0%;"></div></div><span>0</span></div>
+      <div class="rating-item"><span>1 star</span><div class="bar"><div class="fill" style="width: 0%;"></div></div><span>0</span></div>
+  </div>
+  <div class="review-filters">
+      <button class="filter">All</button>
+      <button class="filter">Pic reviews (7)</button>
+      <button class="filter">Additional reviews (0)</button>
+      <button class="filter">Local reviews (0)</button>
+      <button class="filter">5 stars (7)</button>
+      <button class="filter">4 stars (0)</button>
+      <button class="filter">3 stars (0)</button>
+      <button class="filter">2 stars (0)</button>
+      <button class="filter">1 star (0)</button>
+  </div>
+  <div class="reviews">
+      <div class="review">
+          <div class="review-header">
+              <span class="review-color">My Products</span>
+              <span class="review-date">30 Jun 2024</span>
+          </div>
+          <div class="review-content">
+              <p>Our latest collection of products has just arrived, featuring cutting-edge technology and stylish designs to meet all your needs. Whether you're looking for a sleek smart watch to keep track of your fitness goals, high-quality wireless earbuds for an immersive audio experience, or the latest smartphone with stunning display and performance, we've got you covered. Each product is carefully selected for its quality and functionality, ensuring you get the best value for your money. Check out our new arrivals and discover the perfect addition to your tech arsenal today!
+
+              </p>
+              <div class="review-images">
+                  <img src="product5.jfif" alt="Review image 1">
+                  <img src="product6.jfif" alt="Review image 2">
+                  <img src="product7.jfif" alt="Review image 3">
+                  <img src="product4.jfif" alt="Review image 4">
+              </div>
+              <div class="review-footer">
+                  <span class="helpful">Helpful (0)</span>
+              </div>
+              <div class="reviews">
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-color">My Products</span>
+                        <span class="review-date">30 Jun 2024</span>
+                    </div>
+                    <div class="review-content">
+                        <p>Our latest collection of products has just arrived, featuring cutting-edge technology and stylish designs to meet all your needs. Whether you're looking for a sleek smart watch to keep track of your fitness goals, high-quality wireless earbuds for an immersive audio experience, or the latest smartphone with stunning display and performance, we've got you covered. Each product is carefully selected for its quality and functionality, ensuring you get the best value for your money. Check out our new arrivals and discover the perfect addition to your tech arsenal today!
+
+                        </p>
+                        <div class="review-images">
+                            <img src="product5.jfif" alt="Review image 1">
+                            <img src="product6.jfif" alt="Review image 2">
+                            <img src="product7.jfif" alt="Review image 3">
+                            <img src="product4.jfif" alt="Review image 4">
+                        </div>
+                        <div class="review-footer">
+                            <span class="helpful">Helpful (0)</span>
+                        </div>
+          </div>
+      </div>
+  </div>
+  <button class="view-more">View More</button>
+</div>
+    
+  </body>
+</html>
